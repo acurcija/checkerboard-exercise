@@ -26,7 +26,6 @@
 
 var colors = ["red", "black"];
 
-
 var makeDiv = function(color) {
 	// declare variable
     var newDiv = document.createElement("div");
@@ -42,28 +41,25 @@ var makeDiv = function(color) {
     return newDiv;
 };
 
-// for (i = 0 ; i< 9*12; i++) {
-// 	// for(j=0; j<12; j++)
-//     makeDiv("#00D9FF");
-//     makeDiv("#F000FF");
-// //     // makeDiv("blue");
-// //     // makeDiv ("green");
-// //     // makeDiv("purple");
-// //     // makeDiv("pink");
-// }
-
-for (i = 0 ; i< 6*12; i++) {
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    makeDiv("#"+ randomColor);
+for (i = 0 ; i< 9*12; i++) {
+	// for(j=0; j<12; j++)
+// newDiv.style.background = colors[i] + 'liner-gradient(#000000, #ffffff)';
+    makeDiv("white");
+    makeDiv("red");
+//     // makeDiv("blue");
+//     // makeDiv ("green");
+//     // makeDiv("purple");
+//     // makeDiv("pink");
 }
 
-
 // for (i = 0 ; i< 6*12; i++) {
-//     randomColor = randomColor();
+//     randomColor = Math.floor(Math.random()*16777215).toString(16);
 //     makeDiv("#"+ randomColor);
 // }
 
-
+//linear-gradient( [ [ <angle> | [top | bottom] || [left | right] ],]? <color-stop>[, <color-stop>]+);
+//background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(227,32,136,1) 100%);
+//make white div
 
 var body = document.getElementsByTagName("body");
 
